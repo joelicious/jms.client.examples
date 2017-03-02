@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.activemq.jms</groupId>
+  <artifactId>jms.examples.parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>JMS Examples :: Parent</name>
+
+  <url>https://github.com/joelicious/jms.client.examples/</url>
+
+  <scm>
+    <url>https://github.com/joelicious/jms.client.examples.git</url>
+    <connection>scm:git:git://github.com/joelicious/jms.client.examples.git</connection>
+    <developerConnection>scm:git:git@github.com:joelicious/jms.client.examples.git</developerConnection>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>jbutler</id>
+      <name>Joseph Butler</name>
+      <email>jbutler@redhat.com</email>
+      <organization>Red Hat</organization>
+      <organizationUrl>http://redhat.com</organizationUrl>
+      <roles>
+        <role>Consultant</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <modules>
+    <module>activemq.camel.connectionpooling.client</module>
+    <module>artemis.camel.cluster.producer</module>
+    <module>artemis.camel.cluster.consumer</module>
+    <module>artemis.camel.connectionpooling.producer</module>
+    <module>artemis.jndi.client</module>
+    <module>artemis.jndi.group.client</module>
+    <module>artemis.jndi.group.consumer</module>
+    <module>artemis.jndi.group.producer</module>
+  </modules>
+
+  <repositories>
+    <repository>
+      <id>jboss.releases</id>
+      <name>JBoss Fuse Release Repository</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/fs-releases/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>jboss.ea</id>
+      <name>JBoss Fuse Early Access Release Repository</name>
+      <url>https://repository.jboss.org/nexus/content/groups/ea/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>jboss.releases</id>
+      <name>JBoss Fuse Release Repository</name>
+      <url>https://repository.jboss.org/nexus/content/repositories/fs-releases/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </pluginRepository>
+    <pluginRepository>
+      <id>jboss.ea</id>
+      <name>JBoss Fuse Early Access Release Repository</name>
+      <url>https://repository.jboss.org/nexus/content/groups/ea/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </pluginRepository>
+  </pluginRepositories>
+
+</project>
